@@ -126,8 +126,6 @@
 
 // day 5 - sep 20
 
-
-
 /// user defined function
 
 // void addition() {
@@ -201,3 +199,5 @@
 
 /// stdout.write() - print all the values in same line
 /// stdout.writeln() - print the values in different line / new line
+
+void main() {}
