@@ -22,7 +22,9 @@
 
 // variable name is the name given to the memory location where we store the value
 
-// day 4 - sep 18
+// day 4 - sep 19
+
+import 'dart:io';
 
 /// variables are used to store values ina program
 /// to create a variable
@@ -121,3 +123,79 @@
 //   print("The car has a mileage of ${ct2.mileage = 17.5}");
 //   print("It has 3 colour variants${ct2.colour = " Back and Navy blue"}");
 // }
+
+// day 5 - sep 20
+
+/// user defined function
+
+// void addition() {
+//   int a = 100, b = 200;
+//   print("sum=${a + b}"); //here a and b arec locally ddeclatred variables.
+// }
+
+// void subtraction() {
+//   int a = 100, b = 200;
+//   print("sub=${a - b}");
+// }
+
+// void multiplication() {
+//   int a = 100, b = 200;
+//   print("sum=${a * b}");
+// }
+
+// void division() {
+//   int a = 100, b = 200;
+//   print("sum=${a / b}");
+// }
+
+// void main() {
+//   addition();
+//   subtraction();
+//   multiplication();
+//   division();
+// }
+
+// class flutter {
+//   int c = 200;
+
+//   void addition() {
+//     int a = 100, b = 300;
+//     print("sum=${a + b + c}");
+//   }
+// }
+
+// void main() {
+//   flutter obj = flutter();
+//   obj.addition();
+// }
+
+// class myname {
+//   String name = "abhi";
+
+//   void abc() {
+//     print("my name is $name");
+//   }
+// }
+
+// void main() {
+//   myname obj = myname();
+//   obj.abc();
+// }
+
+// void main() {
+//   print("Enter your name : ");
+//   String name = stdin.readLineSync()!;
+
+//   print("Enter your age : ");
+//   int age = int.parse(stdin.readLineSync()!);
+
+//   print("Enter your CGPA: ");
+//   double cgpa = double.parse(stdin.readLineSync()!);
+
+//   stdout.writeln("Name = $name");
+//   stdout.writeln("Age : $age");
+//   stdout.writeln("CGPA : $cgpa");
+// }
+
+/// stdout.write() - print all the values in same line
+/// stdout.writeln() - print the values in different line / new line
