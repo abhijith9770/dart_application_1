@@ -26,6 +26,8 @@
 
 // import 'dart:io';
 
+import 'dart:io';
+
 /// variables are used to store values ina program
 /// to create a variable
 /// synatx >> datatype - variable_name = value ;
@@ -200,4 +202,7 @@
 /// stdout.write() - print all the values in same line
 /// stdout.writeln() - print the values in different line / new line
 
-void main() {}
+void main() {
+  print("enter your name : ");
+  String name = stdin.readLineSync()!;
+}
