@@ -28,6 +28,8 @@
 
 // import 'dart:io';
 
+import 'dart:io';
+
 /// variables are used to store values ina program
 /// to create a variable
 /// synatx >> datatype - variable_name = value ;
@@ -213,15 +215,15 @@
 /// ARITHMETIC OPERATORS - '+' , '-' , '%' , '*' , '/' , '~/'
 
 // void main() {
-  // int a = 10, b = 20;
-  // print("$a + $b = ${a + b}");
-  // print("$a - $b = ${a - b}");
-  // print("$a * $b = ${a * b}");
-  // print("$a / $b = ${a / b}");
-  // print("$a % $b = ${a % b}");
-  // print("$a ~/ $b = ${a ~/ b}");
+// int a = 10, b = 20;
+// print("$a + $b = ${a + b}");
+// print("$a - $b = ${a - b}");
+// print("$a * $b = ${a * b}");
+// print("$a / $b = ${a / b}");
+// print("$a % $b = ${a % b}");
+// print("$a ~/ $b = ${a ~/ b}");
 
-  ///ASSIGNMENT OPETRATORS - =, +=, -=, *=, /=, %= ,~/=, etc.
+///ASSIGNMENT OPETRATORS - =, +=, -=, *=, /=, %= ,~/=, etc.
 
 //   dynamic x = 12, y = 5;
 
@@ -233,49 +235,154 @@
 //   print("x %= y => ${x %= y}");
 //   print("x ~/= y => ${x ~/= y}");
 
-  /// RELATIONAL OPERATORS - >, <, >=, <=, ==, !=
+/// RELATIONAL OPERATORS - >, <, >=, <=, ==, !=
 
-  // int a = 100, b = 75;
-  // print("a > b = ${a > b}");
-  // print("a < b = ${a < b}");
-  // print("a >= b = ${a >= b}");
-  // print("a <= b = ${a <= b}");
-  // print("a == b = ${a == b}");
-  // print("a != b = ${a != b}");
+// int a = 100, b = 75;
+// print("a > b = ${a > b}");
+// print("a < b = ${a < b}");
+// print("a >= b = ${a >= b}");
+// print("a <= b = ${a <= b}");
+// print("a == b = ${a == b}");
+// print("a != b = ${a != b}");
 
-  /// LOGICAL OPERATOR = &&- and , ||- or , !- not
+/// LOGICAL OPERATOR = &&- and , ||- or , !- not
 
-  // String username = "abhi";
-  // String password = "luminar";
-  // print(username == "Abhi" && password == "luminar");
-  // print(username == "abhi" || password == "LUMINAR");
-  // print(!(username == "Abhi" && password == "LUmiNar"));
+// String username = "abhi";
+// String password = "luminar";
+// print(username == "Abhi" && password == "luminar");
+// print(username == "abhi" || password == "LUMINAR");
+// print(!(username == "Abhi" && password == "LUmiNar"));
 
-  /// TYPE TEST OPERATORS - is , is!
+/// TYPE TEST OPERATORS - is , is!
 
-  // double k = 100;
-  // print(k is! int);
+// double k = 100;
+// print(k is! int);
 
-  /// BITWISE OPERATOR - & ! ^(xor) - to perform operations on binary values.
+/// BITWISE OPERATOR - & ! ^(xor) - to perform operations on binary values.
 
-  /// SHIFT OPERATORS - >>(right shift) , <<(rightshift operator)
+/// SHIFT OPERATORS - >>(right shift) , <<(rightshift operator)
 
-  /// CONDITIONAL OPERATORS -
-  ///                        1. expression/condition ? true statement : false statement;
-  ///                        2. expression 1 ?? expression 2
-  ///                        (if exp 1 is null the exp2 will be executed , esle exp1 will br executed.)
+/// CONDITIONAL OPERATORS -
+///                        1. expression/condition ? true statement : false statement;
+///                        2. expression 1 ?? expression 2
+///                        (if exp 1 is null the exp2 will be executed , esle exp1 will br executed.)
 
-  // var result = (username == "abhi" && password == "luminar")
-  //     ? "welcome user"
-  //     : "incorrect username or password";
+// var result = (username == "abhi" && password == "luminar")
+//     ? "welcome user"
+//     : "incorrect username or password";
 
-  // print(result);
+// print(result);
 
-  // String? name = "Anna";       // if name is defined then the length will be displayed or else the null message eill be displayed.
-  // var out = name?.length ?? "name is null";
-  // print(out);
+// String? name = "Anna";       // if name is defined then the length will be displayed or else the null message eill be displayed.
+// var out = name?.length ?? "name is null";
+// print(out);
 
-  // int x = 100, y = 200, z = 300;
-  // var out = x > y ? (y > z ? y : z) : z;
-  // print("$out is largest");
+// int x = 100, y = 200, z = 300;
+// var out = x > y ? (y > z ? y : z) : z;
+// print("$out is largest");
+// }
+
+// day 7 = sep 22
+//--------------\\
+
+/// CASCADE NOTATION
+
+// class A {
+//   void abc() {
+//     print("show function");
+//   }
+
+//   void hij() {
+//     print("luminar");
+//   }
+
+//   void xyz() {
+//     print("Android - flutter");
+//   }
+// }
+
+// void main() {
+//   A obj = A();
+
+//   // obj.abc();
+//   // obj.hij();    Old way of calling
+//   // obj.xyz();
+
+//   obj
+//     ..abc()
+//     ..hij()         // New way of calling
+//     ..xyz();
+// }
+
+/// CONTROL STATEMENTS
+///-------------------\\\
+
+// IF- ELSE
+//---------\\
+// void main() {
+// print("enter your age : ");
+// int age = int.parse(stdin.readLineSync()!);
+
+//   if (age >= 18) {
+//     print("you are eligible to vote");
+//   } else {
+//     print("not eligible for voting");
+//   }
+// }
+
+/// NESTED IF-ELSE
+//----------------\\
+
+// void main() {
+//   print("Enter your username : ");
+//   String username = stdin.readLineSync()!;
+
+//   if (username == "abhi+jith") {
+//     print("Enter your password : ");
+//     int password = int.parse(stdin.readLineSync()!);
+//     if (password == 12345) {
+//       print("LOGIN SUCCESSFUL");
+//     }
+//   } else {
+//     print("incorrect Username or Password");
+//   }
+// }
+
+/// IF-ELSE IF-ELSE
+///----------------\\
+
+// void main() {
+//   print("Enter your Shirt Size : ");
+//   String size = stdin.readLineSync()!;
+//   if (size == "28") {
+//     print("That would be SMALL size");
+//   } else if (size == "32") {
+//     print("That would be MEDIUM size");
+//   } else if (size == "34") {
+//     print("That would be LARGE size");
+//   } else if (size == "40") {
+//     print("That would be Xtra-LARGE Size");
+//   } else {
+//     print("NO SHIRTS ARE AVAILABLE FOR YOU SIZE");
+//   }
+// }
+
+/// SWITCH-CASE
+//-------------\\
+
+// void main() {
+//   print("Enter your SHOE Size : ");
+//   int size = int.parse(stdin.readLineSync()!);
+//   switch (size) {
+//     case 10:
+//       print("Shoe size available in black and brown");
+//     case 9:
+//       print("Shoe size only available in Black");
+//     case 8:
+//       print("Show size only available in Brown ");
+//     case 7:
+//       print("No shoes available in this Size");
+//     case 6:
+//       print("Out of Stock");
+//   }
 // }
