@@ -386,3 +386,127 @@ import 'dart:io';
 //       print("Out of Stock");
 //   }
 // }
+
+// void main() {
+// print("Enter your username : ");                                  //// nested if else example. (login module)
+//   String username = stdin.readLineSync()!;
+//   print("Enter your Password : ");
+//   int password = int.parse(stdin.readLineSync()!);
+//
+//   if (username == "Abhijith") {
+//     if (username != "Abhijith" && password == 12345) {
+//     } else if (username == "Abhijith" && password != 12345) {
+//       print("Wrong Password");
+//     } else {
+//       print("LOGIN SUCCESSFUL");
+//     }
+//   } else {
+//     print("Wrong Username");
+//   }
+// }
+
+/// day 8 - sep 25
+
+// ITERATORS
+//----------\\
+
+/// FOR LOOP
+//----------\\
+
+/// Syntax : for( initialisation ; condition checking ; or increment or decrement operator)
+// void main() {
+//   for (int i = 1; i <= 10; i++) {
+//     print(i);
+//   }
+
+/// WHILE LOOP
+//------------\\
+
+// Synatx :
+//     initialization;
+//     while(condition checking){
+// statements to be executed;
+// increment / decrement counter;}
+
+// int a = 1;
+// while (a <= 10) {
+//   print(a);
+//   a++;
+// }
+
+// DO WHILE LOOP
+//--------------\\
+
+// int x = 1;
+// do {
+//   print("count : $x");
+//   x++;
+// } while (x <= 10);
+// }
+
+// TO PRINT EVEN NUMBERS
+//----------------------\\
+
+// void main() {
+//   for (int a = 1; a < 20; a++) {
+//     if (a % 2 == 0) {
+//       print(a);
+//     }
+//   }
+// }
+//
+
+// TO PRINT ODD NUMBERS
+//---------------------\\
+
+// void main() {
+// for (int a = 1; a < 20; a++) {
+//   if (a % 2 == 1) {
+//     print(a);
+//   }
+// }
+// }
+
+// SUM OF FIRST 10 NATURAL NUMBERS
+//--------------------------------\\
+
+// void main() {
+//   var sum = 0;
+
+//   for (int a = 1; a <= 10; a++) {
+//     sum += a;
+//   }
+//   print("sum = $sum");
+// }
+
+// SUM OF EVEN AND ODD NATURAL NUMBERS IN BTWN 1-10 IN A SINGHLE PRGRM
+//--------------------------------------------------------------------\\
+// void main() {
+//   var sum = 0;
+//   for (int a = 1; a < 10; a++) {
+//     if (a % 2 == 0) {
+//       sum += a;
+//     }
+//   }
+//   print(sum);
+
+//   var abc = 0;
+//   for (int a = 1; a < 10; a++) {
+//     if (a % 2 == 1) {
+//       abc += a;
+//     }
+//   }
+//   print(abc);
+// }
+
+// MULTIPLIOCATION TABLE OF ANY NUMBER
+//------------------------------------\\
+
+// void main() {
+//   print("ENTER YOU VALUE FOR NUM : ");
+//   int num = int.parse(stdin.readLineSync()!);
+
+//   for (int i = 1; i <= 10; i++) {
+//     print("$num*$i = ${num * i}");
+//   }
+// }
