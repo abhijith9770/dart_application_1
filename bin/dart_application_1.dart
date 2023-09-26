@@ -454,17 +454,16 @@ import 'dart:io';
 //     }
 //   }
 // }
-//
 
 // TO PRINT ODD NUMBERS
 //---------------------\\
 
 // void main() {
-// for (int a = 1; a < 20; a++) {
-//   if (a % 2 == 1) {
-//     print(a);
+//   for (int a = 1; a < 20; a++) {
+//     if (a % 2 == 1) {
+//       print(a);
+//     }
 //   }
-// }
 // }
 
 // SUM OF FIRST 10 NATURAL NUMBERS
@@ -480,7 +479,7 @@ import 'dart:io';
 // }
 
 // SUM OF EVEN AND ODD NATURAL NUMBERS IN BTWN 1-10 IN A SINGHLE PRGRM
-//--------------------------------------------------------------------\\
+// //--------------------------------------------------------------------\\
 // void main() {
 //   var sum = 0;
 //   for (int a = 1; a < 10; a++) {
@@ -509,4 +508,125 @@ import 'dart:io';
 //   for (int i = 1; i <= 10; i++) {
 //     print("$num*$i = ${num * i}");
 //   }
+// }
+
+/////////// ROUGH WORK \\\\\\\\\\\\\\\\
+
+// void main() {
+//   List<String> actors = ["abhi", "arun", "vivek", "mr"];
+//   int count = 0;
+//   while (count < actors.length) {
+//     print(actors[count]);
+//     count++;
+//   }
+// }
+
+// day 09 - sep 26
+//----------------\\
+
+/// JUMP STATEMENTS
+
+// 1. BREAK 2. CONTINUE 3. RETURN
+
+// void main() {
+/// USING BREAK
+
+// for (int i = 1; i <= 100; i++) {
+//   if (i == 51) {
+//     break;
+//   }
+//   print(i);
+// }
+
+/// USING CONTINUE
+
+// for (int i = 1; i <= 100; i++) {
+//   if (i % 2 != 0) {
+//     continue;
+//   }
+//   print(i);
+// }
+// }
+
+/// LIST - SET - MAP
+//------------------\\
+
+// 1. LIST
+
+// void main() {
+//   var numbers = [
+//     1,
+//     2,
+//     3,
+//     4,
+//     "hello",
+//     5,
+//     6,
+//     7,
+//     99.00,
+//   ];
+//   // to add a value to list using add function.
+//   numbers.add(1000);
+//   print(numbers);
+//   print("----------------------------");
+
+// // to print a selected value using index position/ index number.
+//   print(numbers[4]);
+//   print(numbers.length);
+//   print("----------------------------");
+
+// // using insert function to insert a value at a certain index to a list
+//   numbers.insert(3, 19);
+//   numbers.insert(11, 190);
+//   print(numbers);
+//   print("----------------------------");
+
+// // using replaceRange function add multiple values by removing certain indexes (start, stop, replacements[])
+//   numbers.replaceRange(0, 2, [11, 22, 33, 44]);
+//   print(numbers);
+//   print("----------------------------");
+
+// // Using for loop to print values in each indexes
+//   for (int index = 0; index < numbers.length; index++) {
+//     print(numbers[index]);
+//   }
+//   print("----------------------------");
+
+//   // for - in loop
+//   for (var i in numbers) {
+//     print(i);
+//   }
+//   print("----------------------------");
+
+//   // forEach in list
+//   numbers.forEach((element) {
+//     print(element);
+//   });
+// }
+
+/// 2. SET
+
+// void main() {
+//   var set1 = {1, 11, 22, 33};
+//   var set2 = {1, 2, 3, 4, 5, 9};
+
+//   print(set1);
+//   print(set2);
+//   print("-------------------------------------------");
+
+//   set2.add(10);
+//   print(set2);
+//   print("-------------------------------------------");
+
+//   print(set2.elementAt(4));
+//   print("-------------------------------------------");
+
+//   for (int index = 0; index < set2.length; index++) {
+//     print(set2.elementAt(index));
+//   }
+//   print("-------------------------------------------");
+
+//   print(set1.union(set2));
+//   print(set1.intersection(set2));
+//   print(set2.difference(set1));
 // }
