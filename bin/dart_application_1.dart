@@ -601,10 +601,10 @@ import 'dart:io';
 //   }
 //   print("----------------------------");
 
-//   // forEach in list
-//   numbers.forEach((element) {
-//     print(element);
-//   });
+// forEach in list
+// numbers.forEach((element) {
+//   print(element);
+// });
 // }
 
 /// 2. SET
@@ -662,76 +662,97 @@ import 'dart:io';
 // }
 
 // void main() {
-  // PROGRAM 1.
+// PROGRAM 1.
 
-  // List<int> list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
-  // print(list);
-  // var sum = 0;
-  // for (int i in list) {
-  //   sum += i;
-  // }
-  // print(sum);
+// List<int> list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+// print(list);
+// var sum = 0;
+// for (int i in list) {
+//   sum += i;
+// }
+// print(sum);
 
-  // PROGRAM 2.
+// PROGRAM 2.
 
-  // List<int> list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+// List<int> list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
 
-  // var sum = 0;
-  // for (int i = 1; i < list.length; i++) {
-  //   if (list[i] % 2 == 0) {
-  //     sum += list[i];
-  //   }
-  // }
-  // print(sum);
-  // PROGRAM 3.
+// var sum = 0;
+// for (int i = 1; i < list.length; i++) {
+//   if (list[i] % 2 == 0) {
+//     sum += list[i];
+//   }
+// }
+// print(sum);
+// PROGRAM 3.
 
-  // int postivenumbers = 0;
-  // int negativenumbers = 0;
-  // int zeros = 0;
+// int postivenumbers = 0;
+// int negativenumbers = 0;
+// int zeros = 0;
 
-  // for (int i in list) {
-  //   if (i > 0) {
-  //     postivenumbers++;
-  //   } else if (i < 0) {
-  //     negativenumbers++;
-  //   } else {
-  //     zeros++;
-  //   }
-  // }
-  // print("No of positive integers : $postivenumbers");
-  // print("No of negative numbers : $negativenumbers");
-  // print("No of zeros : $zeros");
+// for (int i in list) {
+//   if (i > 0) {
+//     postivenumbers++;
+//   } else if (i < 0) {
+//     negativenumbers++;
+//   } else {
+//     zeros++;
+//   }
+// }
+// print("No of positive integers : $postivenumbers");
+// print("No of negative numbers : $negativenumbers");
+// print("No of zeros : $zeros");
 
-  // PROGRAM 4.
+// PROGRAM 4.
 
-  // List<int> list = [2, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
-  // int a = 2;
-  // for (int i = 1; i < list.length; i++) {
-  //   if (list[i] > a) {
-  //     a = list[i];
-  //   }
-  // }
-  // print(a);
+// List<int> list = [2, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+// int a = 2;
+// for (int i = 1; i < list.length; i++) {
+//   if (list[i] > a) {
+//     a = list[i];
+//   }
+// }
+// print(a);
 
-  // // greates number can be found using both ways
+// // greates number can be found using both ways
 
-  // var b = list[0];
-  // for (var i = 0; i < list.length; i++) {
-  //   if (list[i] > b) {
-  //     b = list[i];
-  //   }
-  // }
-  // print(b);
+// var b = list[0];
+// for (var i = 0; i < list.length; i++) {
+//   if (list[i] > b) {
+//     b = list[i];
+//   }
+// }
+// print(b);
 
 // PROGRAM 5
 
-  // dynamic list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+// dynamic list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
 
-  // for (var i = 0; i < list.length; i++) {
-  //   if (list[i] % 2 == 0) {
-  //     print(list[i]);
-  //   }
-  // }
+// for (var i = 0; i < list.length; i++) {
+//   if (list[i] % 2 == 0) {
+//     print(list[i]);
+//   }
+// }
+// }
+
+// PROGRAM 6
+
+// void main() {
+//   print("Enter the value : ");
+//   int value = int.parse(stdin.readLineSync()!);
+
+//   dynamic list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+//   var found = false;
+//   for (int i = 0; i < list.length; i++) {
+//     if (value == list[i]) {
+//       found = true;
+//       break;
+//     }
+//   }
+//   if (found) {
+//     print("The value is present");
+//   } else {
+//     print("The value is not present");
+//   }
 // }
 
 // Day 11 - Sep 28
