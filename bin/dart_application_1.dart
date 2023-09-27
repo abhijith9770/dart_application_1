@@ -28,6 +28,7 @@
 
 // import 'dart:io';
 
+import 'dart:html_common';
 import 'dart:io';
 
 /// variables are used to store values ina program
@@ -481,13 +482,13 @@ import 'dart:io';
 // SUM OF EVEN AND ODD NATURAL NUMBERS IN BTWN 1-10 IN A SINGHLE PRGRM
 // //--------------------------------------------------------------------\\
 // void main() {
-//   var sum = 0;
-//   for (int a = 1; a < 10; a++) {
-//     if (a % 2 == 0) {
-//       sum += a;
-//     }
+// var sum = 0;
+// for (int a = 1; a < 10; a++) {
+//   if (a % 2 == 0) {
+//     sum += a;
 //   }
-//   print(sum);
+// }
+// print(sum);
 
 //   var abc = 0;
 //   for (int a = 1; a < 10; a++) {
@@ -527,6 +528,8 @@ import 'dart:io';
 /// JUMP STATEMENTS
 
 // 1. BREAK 2. CONTINUE 3. RETURN
+
+// USING BREAK
 
 // void main() {
 /// USING BREAK
@@ -630,3 +633,105 @@ import 'dart:io';
 //   print(set1.intersection(set2));
 //   print(set2.difference(set1));
 // }
+
+//  Day 10 - Sep 27
+//-----------------\\
+
+/// 3. MAP
+//--------\\
+
+// void main() {
+//   // var abc = {"name": "abhi", "age": 21, "phone": 9876543221};
+//   // print(abc);
+
+//   Map<String, dynamic> map1 = {"name": "abhi", "age": 21, "phone": 9876543221};
+//   // print(map1);
+
+//   map1.addAll({"email": "helloflutter@gmail.com"});
+//   print(map1);
+
+//   map1["age"] = 32;
+//   print(map1);
+
+//   map1.forEach((key, value) {
+//     print(value);
+//   });
+
+//   print(map1.containsKey("name"));
+//   print(map1.containsValue("abhi"));
+// }
+
+// void main() {
+  // PROGRAM 1.
+
+  // List<int> list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+  // print(list);
+  // var sum = 0;
+  // for (int i in list) {
+  //   sum += i;
+  // }
+  // print(sum);
+
+  // PROGRAM 2.
+
+  // List<int> list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+
+  // var sum = 0;
+  // for (int i = 1; i < list.length; i++) {
+  //   if (list[i] % 2 == 0) {
+  //     sum += list[i];
+  //   }
+  // }
+  // print(sum);
+  // PROGRAM 3.
+
+  // int postivenumbers = 0;
+  // int negativenumbers = 0;
+  // int zeros = 0;
+
+  // for (int i in list) {
+  //   if (i > 0) {
+  //     postivenumbers++;
+  //   } else if (i < 0) {
+  //     negativenumbers++;
+  //   } else {
+  //     zeros++;
+  //   }
+  // }
+  // print("No of positive integers : $postivenumbers");
+  // print("No of negative numbers : $negativenumbers");
+  // print("No of zeros : $zeros");
+
+  // PROGRAM 4.
+
+  // List<int> list = [2, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+  // int a = 2;
+  // for (int i = 1; i < list.length; i++) {
+  //   if (list[i] > a) {
+  //     a = list[i];
+  //   }
+  // }
+  // print(a);
+
+  // // greates number can be found using both ways
+
+  // var b = list[0];
+  // for (var i = 0; i < list.length; i++) {
+  //   if (list[i] > b) {
+  //     b = list[i];
+  //   }
+  // }
+  // print(b);
+
+// PROGRAM 5
+
+  // dynamic list = [1, -3, 7, 9, 0, -6, 4, -2, 0, 10, -8, 5];
+
+  // for (var i = 0; i < list.length; i++) {
+  //   if (list[i] % 2 == 0) {
+  //     print(list[i]);
+  //   }
+  // }
+// }
+
+// Day 11 - Sep 28
