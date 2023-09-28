@@ -31,6 +31,8 @@
 import 'dart:html_common';
 import 'dart:io';
 
+import 'package:test/expect.dart';
+
 /// variables are used to store values ina program
 /// to create a variable
 /// synatx >> datatype - variable_name = value ;
@@ -756,3 +758,137 @@ import 'dart:io';
 // }
 
 // Day 11 - Sep 28
+
+/// FUNCTIONS
+//-----------\\
+
+// FUNCTIONS / METHODS 
+//--------------------\\
+
+// set of statements used to perform some operations
+
+// >1. Main function
+// >2. User defined function
+// >3. Built on functions
+// >4. Lambda functions / Arrow Function
+// >5. Anonymous function
+
+// Sub categories of all of the above functions
+//---------------------------------------------\\
+
+// a. Default function (with or without return type)
+// b. Parameterised function (with or without return type)
+
+// Categories of Parametrised
+//---------------------------\\
+
+// 1. opitional positional
+// 2. Optional named
+// 3. Optional named with default value
+
+// 2. USER DEFINED FUNCTIONS
+//--------------------------\\
+// void main() {
+//   function();
+// }
+
+//(1.) User defined default function without return type
+//------------------------------------------------------\\
+
+// void function() {
+//   print("Default function");
+// }
+
+//(2.) User defined default function with return type (it can be int, string, bool, double,list etc.)
+//---------------------------------------------------------------------------------------------------\\
+
+// void main() {
+//   // func2() can be accessed in 2 ways
+//   //1.
+//   print(func2());
+//   //2.
+//   String n = func2();
+//   print(n);
+// }
+
+// String func2() {
+//   String ab = "hai";
+//   int a = 12;
+//   return "$a,$ab";
+// }
+
+// User defined parameterised function without return type
+//--------------------------------------------------------\\
+
+// void main() {
+//   func3(12, 10);
+// }
+
+// void func3(int a, int b) {
+//   int sum = a + b;
+//   print(sum);
+// }
+
+// User defined parameterised function with return type
+//-----------------------------------------------------\\
+
+// void main() {
+//   func4(2, 9.8, "hey");
+// }
+
+// int func4(int a, double b, String c) {
+//   print("Value of a= $a");
+//   print("Value of b= $b");
+//   print("Value of c= $c");
+
+//   return 0;
+// }
+
+// void main() {
+//   mydetails("abhi", 21, 9.7);
+// }
+
+// void mydetails(String name, int age, double marks) {
+//   print("name = $name,age = $age, CGPA = $marks");
+// }
+
+/// LAMBDA FUNCTION (=>)
+//-----------------\\
+
+// Functions that contain only one statement to be executed
+
+// Lambda function without both return type and parameter
+//--------------------------------------------------\\
+
+// void main() {
+//   func5();
+// }
+
+// void func5() => print("hello");
+
+// Lambda function without return type and with parameter
+//-------------------------------------------------------\\
+
+// void main() {
+//   func6(10, 12);
+// }
+
+// void func6(int a, int b) => print("sum = ${a + b}");
+
+// Lambda function with return type and without parameter
+//-------------------------------------------------------\\
+
+// void main() {
+//   print(func7());
+// }
+
+// int func7() => 10;
+
+// Lambda function with return type and with parameter
+//----------------------------------------------------\\
+
+// void main() {
+//   print(func8(10));
+// }
+
+// int func8(int x) => x + 7;
