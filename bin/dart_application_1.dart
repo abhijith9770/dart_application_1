@@ -762,7 +762,7 @@ import 'package:test/expect.dart';
 /// FUNCTIONS
 //-----------\\
 
-// FUNCTIONS / METHODS 
+// FUNCTIONS / METHODS
 //--------------------\\
 
 // set of statements used to perform some operations
@@ -892,3 +892,58 @@ import 'package:test/expect.dart';
 // }
 
 // int func8(int x) => x + 7;
+
+//Day 12 - Sep 29
+
+// Day 13 - Oct 4
+
+/// CONSTRUCTORS
+//--------------\\
+
+// 1. Similar to functions , used to initialize the object
+// 2. Does not have return type
+// 3. Name must be similar to class name
+// 4. it has 3 types :
+//                    1. Default
+//                    2. Parameterized
+//                    3. Named
+
+// Note : we cant't use default and parametreized constructor in a class.
+// So we mainly use named constructors or combination of default and named and parameterized.
+// if we dont mention constructor in a class it will automatically generate a default constructor
+
+// class A {
+//   A() {
+//     print("abhi");
+//   }
+
+//   A.B(int a, String b) {
+//     print("$a, $b");
+//   }
+
+//   A.c({String? name, int? age, int? year}) {
+//     print("$name");
+//     print("$age");
+//     print("$year");
+//   }
+// }
+
+// void main(List<String> args) {
+//   A obj1 = A();
+//   A obj2 = A.B(10, "Arun");
+//   A obj3 = A.c();
+// }
+
+// void main() {
+//   var list1 = List.empty(growable: true);
+//   var list2 = [];
+//   print("list 1 = $list1");
+//   list1.add(10);
+//   list1.addAll([20, 30, 40]);
+
+//   var list3 = List.from(list1);
+//   list3.addAll([1, 2, 3, 4, 5]);
+//   print(list1);
+//   print(list2);
+//   print(list3);
+// }
