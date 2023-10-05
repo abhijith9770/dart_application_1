@@ -935,15 +935,107 @@ import 'package:test/expect.dart';
 // }
 
 // void main() {
-//   var list1 = List.empty(growable: true);
-//   var list2 = [];
-//   print("list 1 = $list1");
-//   list1.add(10);
-//   list1.addAll([20, 30, 40]);
+// var list1 = List.empty(growable: true);
+// var list2 = [];
+// print("list 1 = $list1");
+// list1.add(10);
+// list1.addAll([20, 30, 40]);
 
-//   var list3 = List.from(list1);
-//   list3.addAll([1, 2, 3, 4, 5]);
-//   print(list1);
-//   print(list2);
-//   print(list3);
+// var list3 = List.from(list1);
+// list3.addAll([1, 2, 3, 4, 5]);
+// print(list1);
+// print(list2);
+// print(list3);
+
 // }
+
+// class A {
+//   A() {
+//     print("default constructor");
+//   }
+//   // A(int a, String b){
+//   // print('parametererised constructor $a,$b');
+//   //}
+
+//   A.name1() {
+//     print("default name constructor");
+//   }
+
+//   A.name2(int a, int b) {
+//     print('default name constructor with parameter $a, $b');
+//   }
+//   A.name3({String? name, int? age, int? year}) {
+//     print('name = $name');
+//     print('age = $age');
+//     print('year = $year');
+//   }
+
+//   A.name4(String? name, {required String email, int age = 12, double? cgpa}) {
+//     print('name = $name');
+//     print('email = $email');
+//     print('age =$age');
+
+//     if (cgpa == null) {
+//       print("no data");
+//     } else {
+//       print('cgpa = $cgpa');
+//     }
+//   }
+// }
+
+// void main() {
+//   A obj1 = A();
+//   A obj2 = A.name1();
+//   A obj3 = A.name2(10, 100);
+//   A obj4 = A.name3();
+//   A abj5 = A.name4("abhijith", email: 'abhijith@gmail.com');
+// }
+
+// Day 14 = Oct 5
+
+// void main() {
+//   dynamic list4 = List.filled(10, [1, 2, 3]);
+//   print(" list4 = $list4");
+//   list4[4] = 6;
+//   print(list4);
+// }
+
+/// SET \\\
+//-------\\
+
+// void main() {
+//   Set s1 = {};
+//   Set s2 = Set();
+//   Set s3 = Set.of([1, 2, 3, 4, 5]);
+//   Set s4 = Set.from({10, 20, 30, 40});
+//   Set s5 = Set.unmodifiable(s4);
+//   Set s6 = Set.identity();
+
+//   print("Set 3 = $s3");
+//   print("Set 4 = $s4");
+//   print("Set 5 = $s5");
+// }
+
+///  MAP  \\\
+//----------\\
+
+void main() {
+  var l1 = [1, 2, 3, 4, 5, 6, 7, 8];
+  var s1 = [10, 20, 30, 40, 50, 60, 70, 80];
+
+  var m1 = {};
+  var m2 = Map();
+  m2["key1"] = "value1";
+  m2["key2"] = "value2";
+
+  var m3 = Map.fromEntries(m2.entries);
+  m3["key3"] = "value3";
+
+  Map m4 = Map.fromIterable(l1);
+  Map m5 = Map.fromIterables(l1, s1);
+
+  print(m2);
+  print(m3);
+  print(m4);
+  print(m5);
+}
