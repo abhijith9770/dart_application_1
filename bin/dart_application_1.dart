@@ -28,10 +28,7 @@
 
 // import 'dart:io';
 
-import 'dart:html_common';
 import 'dart:io';
-
-import 'package:test/expect.dart';
 
 /// variables are used to store values ina program
 /// to create a variable
@@ -1019,23 +1016,142 @@ import 'package:test/expect.dart';
 ///  MAP  \\\
 //----------\\
 
+// void main() {
+//   var l1 = [1, 2, 3, 4, 5, 6, 7, 8];
+//   var s1 = [10, 20, 30, 40, 50, 60, 70, 80];
+
+//   var m1 = {};
+//   var m2 = Map();
+//   m2["key1"] = "value1";
+//   m2["key2"] = "value2";
+
+//   var m3 = Map.fromEntries(m2.entries);
+//   m3["key3"] = "value3";
+
+//   Map m4 = Map.fromIterable(l1);
+//   Map m5 = Map.fromIterables(l1, s1);
+
+//   print(m2);
+//   print(m3);
+//   print(m4);
+//   print(m5);
+// }
+
+// october 6
+
+// OOPS CONCEPT (OBJECT ORIENTED PROGRAMMING)
+//-------------------------------------------\\
+
+// 1. CLASS
+// 2. OBJECCT
+// 3. INHERITANCE
+// 4. POLYMORPHISM
+// 5. ABSTRACTION
+// 6. ENCAPSULATION
+
+// I) INHERITANCE
+//               1. SINGLE
+//               2. MULTILEVEL
+//               3. HIERARCHIAL
+//               4. MULTIPLE (This is achieved by implements keyword or interface)
+
+/// SINGLE INHERITANCE
+//--------------------\\
+
+// class A {
+//   String name = " abhi";
+//   int age = 21;
+
+//   void details() {
+//     print("name : $name");
+//     print("age : $age");
+//   }
+// }
+
+// class B extends A {
+//   dynamic std = "10 th";
+
+//   void abc() {
+//     print("std : $std");
+//     details();
+//   }
+// }
+
+// void main(List<String> args) {
+//   B a = B();
+//   a.abc();
+// }
+
+/// MULTI-LEVEL INHERITANCE
+//-------------------------\\
+
+// class A {
+//   String car_1name = "celerio";
+//   String brand = "Maruthi";
+
+//   void func1() {
+//     print("car 1 name: $car_1name");
+//     print("car 1 Brand : $brand");
+//   }
+// }
+
+// class B extends A {
+//   String car_2name = "Supra";
+//   dynamic brandname = "Toyota";
+
+//   void func2() {
+//     print("car 2 name : $car_2name");
+//     print("car 2 brand : $brandname");
+//   }
+// }
+
+// class C extends B {
+//   String car_3name = "R-34";
+//   dynamic brand2name = "Nissan GT";
+
+//   void func3() {
+//     print("car 3 name : $car_3name");
+//     print("car 3 brand : $brand2name");
+//   }
+// }
+
+// void main(List<String> args) {
+//   C abc = C();
+//   abc.func1();
+//   print("-----------------------");
+//   abc.func2();
+//   print("-----------------------");
+//   abc.func3();
+// }
+
+/// HEIRARCHIAL INHERITANCE
+//-------------------------\\
+
+class Car {
+  void details(String color, String engine, String transmission, int year) {
+    print("Colour = $color");
+    print("Engine = $engine");
+    print("transmission = $transmission");
+    print("Year = $year");
+  }
+}
+
+class Maruthi extends Car {
+  String name = "VITARA BREZZA";
+}
+
+class Benz extends Car {
+  String name = "BENZ S CLASS";
+}
+
 void main() {
-  var l1 = [1, 2, 3, 4, 5, 6, 7, 8];
-  var s1 = [10, 20, 30, 40, 50, 60, 70, 80];
+  Maruthi obj = Maruthi();
+  print("CAR NAME : ${obj.name}");
+  obj.details("Red", "1l", "manual", 2002);
 
-  var m1 = {};
-  var m2 = Map();
-  m2["key1"] = "value1";
-  m2["key2"] = "value2";
+  print("--------------------------------");
 
-  var m3 = Map.fromEntries(m2.entries);
-  m3["key3"] = "value3";
-
-  Map m4 = Map.fromIterable(l1);
-  Map m5 = Map.fromIterables(l1, s1);
-
-  print(m2);
-  print(m3);
-  print(m4);
-  print(m5);
+  Benz obj1 = Benz();
+  print("CAR NAME : ${obj1.name}");
+  obj1.details("Black", "3.4L", "Automatic", 2005);
 }
